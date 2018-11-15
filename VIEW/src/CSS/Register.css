@@ -1,0 +1,79 @@
+.register-page {
+  border: 1px solid black;
+  width: 30vw;
+  padding: .5rem 2rem;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1rem auto;
+  min-height: 70vh;
+}
+
+.register-page a, .register-page a:visited {
+  color: #3a81ec;
+}
+
+.register-page a:hover, .register-page a:visited:hover {
+  text-decoration: underline;
+}
+
+.register-page p {
+  color: grey;
+  font-size: 12px;
+  text-align: left;
+}
+
+.register-form input[type=text],
+.register-form input[type=number],
+.register-form input[type=email],
+.register-form input[type=password] {
+  width: 100%;
+  height: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.remember {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remember span {
+  font-size: .8rem;
+}
+
+.register-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: -8px;
+}
+
+.register-head {
+  line-height: .8;
+  margin-bottom: 3rem;
+}
+
+.register-form input[type=submit] {
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-form input[type=submit]:hover {
+  border: 1px solid black;
+}
+
+p.error-message {
+  color: red;
+}
+/*# sourceMappingURL=Register.css.map */

@@ -1,0 +1,13 @@
+.admin-panel {
+    display: flex;
+}
+
+.admin-sidebar {
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    height: 100vh;
+    flex-basis: 20%;
+    background: grey;
+    margin-top: 0;
+}

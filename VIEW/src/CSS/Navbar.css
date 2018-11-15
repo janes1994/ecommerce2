@@ -1,0 +1,460 @@
+a {
+  text-decoration: none;
+  margin-top: 1.8rem;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+.nav {
+  width: 100vw;
+  height: 3em;
+  background: black;
+  padding: .5em .8em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 40%;
+          column-gap: 40%;
+  opacity: .8;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  z-index: 99;
+}
+
+.nav.expand {
+  opacity: 1;
+}
+
+@media (min-width: 766px) {
+  .nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 92%;
+            column-gap: 92%;
+    height: 2.5em;
+    opacity: .8;
+    overflow: hidden;
+    margin-bottom: -1.8rem;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.burger:hover {
+  opacity: .8;
+}
+
+.burger .bar1, .burger .bar2, .burger .bar3 {
+  width: 20px;
+  height: 2px;
+  margin: 6px 0;
+  background: whitesmoke;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.burger .bar1.bar1.change, .burger .bar2.bar1.change, .burger .bar3.bar1.change {
+  -webkit-transform: rotate(-45deg) translate(-50%, 50%);
+          transform: rotate(-45deg) translate(-50%, 50%);
+}
+
+.burger .bar1.bar2.change, .burger .bar2.bar2.change, .burger .bar3.bar2.change {
+  opacity: 0;
+}
+
+.burger .bar1.bar3.change, .burger .bar2.bar3.change, .burger .bar3.bar3.change {
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+          transform: rotate(45deg) translate(-50%, -50%);
+}
+
+@media (min-width: 766px) {
+  .burger {
+    display: none;
+  }
+}
+
+.logo {
+  color: whitesmoke;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.logo:hover {
+  opacity: .8;
+}
+
+@media (min-width: 766px) {
+  .logo {
+    margin-left: 15vw;
+  }
+}
+
+.logo p {
+  color: black;
+  margin-top: -8px;
+  margin-bottom: 2px;
+}
+
+.login-logo {
+  position: relative;
+  right: -66%;
+}
+
+.login-logo .login-logo-pop {
+  width: 220px;
+  min-height: 250px;
+  background: white;
+  color: #111;
+  border: 1px solide black;
+  position: absolute;
+  left: -7rem;
+  top: 2.2rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  display: none;
+}
+
+.login-logo .login-logo-pop ul {
+  list-style-type: none;
+  padding: 1.5rem;
+  margin-top: -.4rem;
+}
+
+.login-logo .login-logo-pop ul li {
+  text-align: left;
+  line-height: 3rem;
+  border-bottom: 1px solid #cecece;
+  color: #2775eb;
+  font-family: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.login-logo .login-logo-pop ul li:hover {
+  border-bottom: 1px solid #3f72ff;
+}
+
+.login-logo .login-logo-pop ul li .material-icons {
+  margin-right: 12px;
+  font-size: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bag {
+  color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.bag.expand {
+  opacity: 0;
+}
+
+.bag .material-icons {
+  cursor: pointer;
+}
+
+.bag .material-icons:hover {
+  opacity: .8;
+}
+
+.navlist {
+  display: block;
+  background: black;
+  height: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+@media (min-width: 766px) {
+  .navlist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: -2.5rem;
+  }
+  .navlist a {
+    padding: .5em 2em;
+  }
+}
+
+.navlist.expand {
+  height: 100vh;
+  padding: .1em 2.5em;
+  width: 100vw;
+}
+
+.navlist span {
+  font-size: 1.1em;
+  display: none;
+  color: whitesmoke;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+@media (min-width: 766px) {
+  .navlist span {
+    display: inline;
+    margin: 0 1.5em;
+    font-size: .9em;
+  }
+  .navlist span hr {
+    display: none;
+  }
+}
+
+.navlist span:hover {
+  opacity: .6;
+}
+
+.navlist span.expand {
+  display: block;
+  margin-top: .7em;
+}
+
+.searchnav {
+  background: black;
+  text-align: center;
+  display: none;
+  padding-bottom: .3em;
+  padding-top: .3em;
+}
+
+.searchnav .cancelsearch {
+  display: none;
+  cursor: pointer;
+  color: #2e98ee;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.searchnav .cancelsearch span {
+  font-size: 1.1em;
+}
+
+.searchnav .cancelsearch.expand {
+  display: inline-block;
+  position: absolute;
+  top: .8em;
+  left: 70%;
+}
+
+.searchnav .cancelsearch:hover {
+  opacity: .8;
+}
+
+.searchnav input {
+  border: 0px solid;
+  width: 90vw;
+  height: 2.5em;
+  border-radius: 4px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/2000px-Magnifying_glass_icon.svg.png) no-repeat 0.5em 0.7em #444;
+  background-size: 1.2em;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+.searchnav input:hover::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+
+.searchnav input:hover:-ms-input-placeholder {
+  color: #b6b6b6;
+}
+
+.searchnav input:hover::-ms-input-placeholder {
+  color: #b6b6b6;
+}
+
+.searchnav input:hover::placeholder {
+  color: #b6b6b6;
+}
+
+.searchnav input:focus {
+  border: .5px solid blue;
+}
+
+.searchnav input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.searchnav input:-ms-input-placeholder {
+  color: grey;
+}
+
+.searchnav input::-ms-input-placeholder {
+  color: grey;
+}
+
+.searchnav input::placeholder {
+  color: grey;
+}
+
+.searchnav input.expand {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 1em;
+}
+
+.searchnav.expand {
+  display: block;
+}
+
+.searchnav .quicklinks {
+  width: 0;
+  text-align: left;
+  margin: 1em 1em;
+  height: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.searchnav .quicklinks.expand {
+  height: 100vh;
+  width: 90vw;
+}
+
+.searchnav .quicklinks.expand::before {
+  content: "QUICK LINKS";
+  color: grey;
+  display: block;
+  margin: 2em 0;
+  font-size: .7em;
+}
+
+.searchnav .quicklinks::before {
+  content: "QUICK LINKS";
+  color: grey;
+  display: none;
+  margin: 2em 0;
+  font-size: .7em;
+}
+
+.searchnav .quicklinks span {
+  display: none;
+  color: whitesmoke;
+  padding: .5em 1.5em;
+  font-size: .9em;
+  cursor: pointer;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.searchnav .quicklinks span:hover {
+  opacity: .8;
+}
+
+.searchnav .quicklinks span.expand {
+  display: block;
+}
+
+.bagnotif {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em 3em;
+  position: fixed;
+  display: none;
+  background: whitesmoke;
+}
+
+.bagnotif.expand {
+  display: block;
+}
+
+@media (min-width: 766px) {
+  .bagnotif.expand {
+    border: 1px solid grey;
+    width: 20em;
+    position: fixed;
+    top: 9%;
+    right: 1%;
+    z-index: 99;
+  }
+}
+
+.bagnotif h2 {
+  color: #7e7e7e;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.bagnotif i.material-icons {
+  color: #3479e0;
+  cursor: pointer;
+  padding-top: 4px;
+  font-size: 1.2em;
+}
+
+.bagnotif i.material-icons:hover {
+  opacity: .8;
+}
+
+.bagnotif span {
+  color: #4d8dee;
+  cursor: pointer;
+  margin-left: 1em;
+  font-size: .9em;
+}
+
+.bagnotif span:hover {
+  opacity: .8;
+}
+/*# sourceMappingURL=Navbar.css.map */

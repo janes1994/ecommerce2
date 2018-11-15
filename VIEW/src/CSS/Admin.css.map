@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,GAAG;EACf,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,CAAC;CAChB",
+    "sources": [
+        "Admin.scss"
+    ],
+    "names": [],
+    "file": "Admin.css"
+}

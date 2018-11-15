@@ -1,0 +1,104 @@
+.container {
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+    height: 7.6em;
+    box-sizing: border-box;
+    width: 100vw;
+    background: rgb(26, 26, 26);
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1.8em;
+
+    @media(max-width: 766px) {
+      top: 0em;
+      right: 0%;
+    }
+}
+.slide {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50px);
+    color: whitesmoke;
+    margin-left: 4em;
+    transition: right 300ms ease-in-out;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0%;
+
+    @media(max-width: 766px) {
+      margin-left: 2em;
+    }
+
+    &:hover.slide span {
+        color: rgb(71, 99, 221);  
+      }
+}
+
+.slide i.material-icons {
+  font-size: 3em;
+  margin: 0 0;
+}
+
+.slide span {
+  color: whitesmoke;
+  display: block;
+  font-size: .7em;
+}
+
+.prev span{
+  cursor: pointer;
+  color:red;
+  position: absolute;
+  top: 10%;
+  display: block;
+  background: yellow;
+  height: 3em;
+}
+
+.next span{
+cursor: pointer;
+  color:red;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.next, .prev {
+  color: whitesmoke;
+  cursor: pointer;
+  position: absolute;
+  top: 3em;
+  right: 0;
+  height: 7.6em;
+  width: 3em;
+  background: rgb(26, 26, 26);
+  border-left: 1px solid whitesmoke;
+
+  @media(min-width: 766px) {
+    display: none;
+  }
+}
+.nextButton, .prevButton {
+  position: relative;
+  top: 40%;
+  left: 50%;
+}
+
+.prev {
+  top: 3em;
+  left: 0;
+  border-left: 0px;
+  border-right: 1px solid whitesmoke;
+}
+.prevButton {
+  position: relative;
+  top: 40%;
+  left: 40%;
+}

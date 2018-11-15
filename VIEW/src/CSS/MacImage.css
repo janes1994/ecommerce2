@@ -1,0 +1,76 @@
+.mac-image-content {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.mac-image-content .mac-content-tag {
+  position: absolute;
+  color: whitesmoke;
+  margin-top: 0%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.mac-image-content .mac-content-tag h1 {
+  line-height: .5;
+  font-size: 5rem;
+}
+
+.mac-image-content .mac-content-tag h3 {
+  font-size: 1.8rem;
+}
+
+.mac-image-content .mac-content-tag span {
+  z-index: 9;
+  color: #6491f1;
+  cursor: pointer;
+}
+
+.mac-image-content img {
+  width: 100%;
+  height: 100%;
+  margin-top: 13%;
+}
+
+.mac-image-content1 {
+  background: #121318;
+}
+
+.mac-image-content2 {
+  background: #111;
+  margin-top: 15%;
+  height: 120%;
+}
+
+.mac-image-content2 img {
+  width: 70%;
+  margin-top: 20%;
+}
+
+.mac-image-content3 {
+  background: #fbfbfb;
+}
+
+.mac-image-content3 .mac-content-tag {
+  color: #111;
+}
+
+.mac-image-content3 img {
+  margin-top: 25%;
+}
+
+.mac-image-content4 {
+  margin-top: 30%;
+}
+
+.mac-image-content4 .mac-content-tag {
+  color: #111;
+}
+
+.mac-image-content4 img {
+  margin-top: 18%;
+  width: 80%;
+}
+/*# sourceMappingURL=MacImage.css.map */

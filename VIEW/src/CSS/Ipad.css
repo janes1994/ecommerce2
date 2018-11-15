@@ -1,0 +1,88 @@
+.ipad-container {
+  background: #fafafa;
+}
+
+.ipad-container .material-icons {
+  color: #444444;
+}
+
+.ipad-container span {
+  color: #444444;
+}
+
+.ipad-container .slide {
+  margin: 0 .6rem;
+}
+
+.ipad-ipad {
+  background: #e2e2e2;
+}
+
+.ipad-content {
+  background: white;
+  padding-top: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ipad-content h1 {
+  line-height: .8rem;
+  font-size: 5rem;
+}
+
+.ipad-content p {
+  line-height: .8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ipad-content img {
+  max-width: 75vw;
+  max-height: 75vh;
+}
+
+.ipad-content-split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ipad-content-split .ipad-content {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin-top: 1rem;
+}
+
+.ipad-content-split .ipad-content h1 {
+  font-size: 3rem;
+  padding-bottom: 8px;
+}
+
+.ipad-content-split .ipad-content img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.tombol-buy {
+  padding: .5rem 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.tombol-buy a {
+  color: black;
+}
+
+.tombol-buy:hover {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=Ipad.css.map */

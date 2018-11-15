@@ -1,0 +1,516 @@
+.check-out-page {
+  padding: 1rem 5rem;
+  text-align: left;
+}
+
+.check-out-page .checkout-alamat-pengiriman {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.check-out-page .ringkasan-belanja {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.check-out-page h4 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.check-out-page .bayar {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.checkout-alamat-pengiriman .checkout-alamat-pengiriman-alamat {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.checkout-alamat-pengiriman .checkout-alamat-pengiriman-alamat .nama-pengirim {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.checkout-alamat-pengiriman .checkout-alamat-pengiriman-alamat p {
+  line-height: .5rem;
+}
+
+.checkout-alamat-pengiriman .checkout-alamat-pengiriman-alamat .ganti-alamat {
+  margin-top: 2rem;
+  border: 1px solid grey;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ringkasan-belanja .ringkasan-data {
+  border: 1px solid gray;
+  padding: 1rem;
+}
+
+.ringkasan-belanja .ringkasan-data .ringkasan-harga {
+  font-weight: bold;
+}
+
+.modal-alamat {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-alamat .modal-content {
+  background: #fff;
+  width: 55%;
+  height: 90%;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.modal-alamat .modal-content .modal-close {
+  border: 3px solid #111;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 15px;
+  left: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+
+.modal-alamat .modal-content input[type=text] {
+  width: 100%;
+  height: 2rem;
+}
+
+.modal-alamat .modal-content .modal-form {
+  padding: 1rem 4rem;
+}
+
+.modal-alamat .alamat-lama {
+  margin: 1rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid grey;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.modal-alamat .alamat-lama .radiobutton {
+  margin: auto;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+.modal-alamat .alamat-lama .alamat-content {
+  text-align: left;
+  font-size: .8rem;
+  line-height: .4;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.modal-alamat .alamat-lama .alamat-content .alamat-nama {
+  font-weight: bold;
+}
+
+.modal-alamat .alamat-lama .alamat-ubah {
+  background: #111;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: .5rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-alamat .alamat-pilih {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  top: 30%;
+}
+
+.modal-alamat .alamat-pilih .alamat-tambah-baru,
+.modal-alamat .alamat-pilih .alamat-pakai-ini {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modal-alamat .alamat-pilih .alamat-tambah-baru {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.modal-alamat .alamat-pilih .alamat-pakai-ini {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.modal-tambah-alamat {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-tambah-alamat .content-tambah-alamat {
+  background: #fff;
+  width: 55%;
+  height: 97%;
+  border-radius: 5px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.modal-tambah-alamat .content-tambah-alamat .modal-close {
+  border: 3px solid #111;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 15px;
+  left: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+
+.modal-tambah-alamat .content-tambah-alamat .form-tambah-alamat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 3rem;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.modal-tambah-alamat .content-tambah-alamat .form-tambah-alamat label {
+  font-size: .8rem;
+}
+
+.modal-tambah-alamat .content-tambah-alamat .form-tambah-alamat input {
+  width: 100%;
+  height: 1.5rem;
+  border: 1px solid #bbbbbb;
+  padding: 4px;
+}
+
+.modal-tambah-alamat .content-tambah-alamat .form-tambah-alamat span {
+  font-size: .8rem;
+  color: grey;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal-tambah-split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-tambah-split .modal-tambah-penerima {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.modal-tambah-split .modal-tambah-telfon {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.modal-tambah-split .modal-tambah-kota-kecamatan {
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
+}
+
+.modal-tambah-split .modal-tambah-kodepos {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.modal-tambah-alamatlengkap {
+  margin-top: 1rem;
+}
+
+.modal-tambah-textarea {
+  height: 50px;
+}
+
+.modal-tambah-submit-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10%;
+}
+
+.modal-tambah-submit-options input[type=button],
+.modal-tambah-submit-options input[type=submit] {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-tambah-submit-options input[type=button] {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: #fff;
+}
+
+.modal-tambah-submit-options input[type=submit] {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.modal-checkout-bayar {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-checkout-bayar .modal-checkout-bayar-content {
+  background: #fff;
+  width: 30%;
+  height: 90%;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.modal-checkout-bayar .modal-checkout-bayar-content .modal-checkout-bayar-close {
+  border: 3px solid #111;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 15px;
+  left: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+
+.pilihan-bank {
+  padding: 0rem 2rem;
+}
+
+.pilihan-bank .pilihan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.pilihan-bank .pilihan img {
+  height: 25px;
+  width: 60px;
+}
+
+.pilihan-bank .pilihan .nama-bank {
+  text-align: left;
+  line-height: .3;
+  font-size: .9rem;
+}
+
+.pilihan-bank .pilihan .nama-bank p {
+  color: grey;
+}
+
+.modal-pilihan-bank {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  overflow: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-pilihan-bank img {
+  height: 22px;
+  width: 55px;
+}
+
+.modal-pilihan-bank .modal-pilihan-bank-content {
+  background: #fff;
+  width: 30%;
+  height: 90%;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+
+.modal-pilihan-bank .modal-pilihan-bank-content-harga {
+  border: .5px solid grey;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.modal-pilihan-bank .modal-pilihan-bank-content-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: .5px solid grey;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.modal-pilihan-bank .modal-pilihan-rekening {
+  border: .5px solid grey;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-box-shadow: .5px .5px 1px 1px #888;
+          box-shadow: .5px .5px 1px 1px #888;
+}
+
+.modal-pilihan-bank .modal-pilihan-rekening label {
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.modal-pilihan-bank .modal-pilihan-rekening input {
+  width: 100%;
+  height: 1.5rem;
+  margin-top: .7rem;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.modal-pilihan-bank .modal-pilihan-rekening .pilihan-underline {
+  font-size: 12px;
+  color: grey;
+}
+
+.modal-pilihan-bank .modal-pilihan-rekening .note {
+  margin-top: .8rem;
+  color: #3f3f3f;
+  font-size: 12px;
+}
+
+.modal-pilihan-bank .rata-button-pilihan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-pilihan-bank input[type=button] {
+  width: 80%;
+  height: 40px;
+  margin: 25px 40px;
+  border-radius: 4px;
+  background: #bebebe;
+  border: none;
+}
+
+.modal-pilihan-bank .berhasil-bayar {
+  height: 60%;
+  width: 50%;
+  padding: 1rem 2rem;
+  margin-top: 5%;
+}
+
+.modal-pilihan-bank .berhasil-bayar .wrapper-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-pilihan-bank .berhasil-bayar .wrapper-icon img.icon-shop {
+  min-width: 200px;
+  min-height: 150px;
+}
+
+.modal-pilihan-bank .berhasil-bayar .wrapper-icon .success-title {
+  font-size: 2.5rem;
+}
+
+.modal-pilihan-bank .berhasil-bayar .wrapper-icon .success-price {
+  font-size: 1.5rem;
+}
+
+.modal-pilihan-bank .berhasil-bayar .route {
+  padding: 1rem 1.5rem;
+  background: #464646;
+  margin: 10%;
+  position: relative;
+  bottom: -60px;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=Checkout.css.map */

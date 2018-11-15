@@ -1,0 +1,68 @@
+.shop-main {
+    display: flex;
+    padding: 5rem 2rem;
+
+    .shop-image {
+
+        img {
+            width: 60%;
+            height: 90%;
+        }
+    }
+
+    .shop-pay {
+
+        .pay-title {
+            font-size: .8rem;
+            line-height: .8;
+            text-align: left;
+        }
+
+        .pay-specs {
+            // display: inline;
+            text-align: left;
+            line-height: 1.8;
+            
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.shop-price {
+    width: 100vw;
+    height: 20%;
+    background: #f5f4f4;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 1.5rem 8rem;
+
+    .check-price {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        margin-top: -.5rem;
+        // font-weight: bold;
+    }
+
+    .check-bag {
+        cursor: pointer;
+        padding: 1rem 5rem;
+        background: rgb(38, 103, 224);
+        color: white;
+        height: fit-content;
+        border-radius: 5%;
+        // margin: 1rem 1rem;
+
+    }
+}
+
+.shop-title h1 {
+    text-align: left;
+    margin-left: 2rem;
+    line-height: .8;
+}

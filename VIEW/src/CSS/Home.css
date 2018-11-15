@@ -1,0 +1,174 @@
+.content {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content span {
+  color: #2462e6;
+  cursor: pointer;
+  padding: 0 1em;
+}
+
+.content span:hover {
+  text-decoration: underline;
+}
+
+.content span a {
+  color: #2462e6;
+}
+
+.content h4 {
+  margin-bottom: 1em;
+}
+
+img.desktop {
+  display: none;
+}
+
+img.mobile {
+  display: block;
+}
+
+@media (min-width: 766px) {
+  img.mobile {
+    display: none;
+  }
+  img.desktop {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 80%;
+  }
+  .content {
+    padding: 5rem 0;
+  }
+  h2 {
+    font-size: 3.3em;
+  }
+  h4 {
+    font-size: 1.5em;
+    margin-top: -1.5em;
+  }
+  span {
+    font-size: 1.3em;
+  }
+}
+
+.one {
+  background: #f1f1f1;
+}
+
+@media (min-width: 766px) {
+  .content.two {
+    width: 50%;
+    padding-top: 1em;
+    position: absolute;
+  }
+  .content.two h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+  .content.two h4 {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+  }
+  .content.two img {
+    width: 50%;
+    height: 70vh;
+    margin-top: 2rem;
+  }
+}
+
+.content.three {
+  color: whitesmoke;
+}
+
+@media (min-width: 766px) {
+  .content.three {
+    width: 100%;
+    position: relative;
+    top: -50%;
+    padding-top: 1em;
+  }
+  .content.three img {
+    width: 100%;
+    height: 95vh;
+  }
+  .content.three .tag {
+    padding-top: 1em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .content.three .tag h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+  .content.three .tag h4 {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.content.four {
+  background: #FBEFE3;
+  color: #111;
+  margin-top: -5em;
+}
+
+@media (min-width: 766px) {
+  .content.four {
+    width: 50%;
+    position: absolute;
+  }
+  .content.four h2 {
+    font-size: 2em;
+    margin-bottom: 1.2em;
+    margin-top: -1.5em;
+  }
+  .content.four img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 766px) {
+  .content.five {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    top: -50%;
+    margin-top: -5em;
+  }
+  .content.five img {
+    width: 80%;
+  }
+  .content.five h2 {
+    font-size: 2em;
+    margin-bottom: 1.2em;
+    margin-top: -1.5em;
+  }
+}
+
+@media (min-width: 766px) {
+  .content.six {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    top: -50%;
+    margin-top: -4em;
+  }
+  .content.six img {
+    width: 40vw;
+    height: 90vh;
+  }
+  .content.six h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

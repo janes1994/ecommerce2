@@ -1,0 +1,66 @@
+.login-page {
+  border: 1px solid black;
+  width: 30vw;
+  padding: 2rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1.5rem auto;
+  min-height: 70vh;
+  border-radius: 8px;
+}
+
+.login-page a, .login-page a:visited {
+  color: #3a81ec;
+}
+
+.login-form input[type=text],
+.login-form input[type=password] {
+  width: 100%;
+  height: 2rem;
+}
+
+.remember {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remember span {
+  font-size: .8rem;
+}
+
+.login-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.login-head {
+  line-height: .8;
+  margin-bottom: 2rem;
+}
+
+.login-head a {
+  font-weight: bold;
+}
+
+.login-form input[type=submit] {
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.login-form input[type=submit]:hover {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=Login.css.map */
